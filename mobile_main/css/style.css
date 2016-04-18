@@ -1,0 +1,343 @@
+    p{font-size: vmax;}
+    .custom-menu {
+    	display: none;
+    	z-index: 1000;
+    	position: absolute;
+    	overflow: hidden;
+    	border: 1px solid #CCC;
+    	white-space: nowrap;
+    	font-family: sans-serif;
+    	background: lightgray;
+    	color: #333;
+    	border-radius: 5px;
+    	padding: 0;
+    }
+    .custom-menu li {
+    	padding: 8px 12px;
+    	cursor: pointer;
+    	list-style-type: none;
+    }
+
+    .custom-menu li:hover {
+    	background-color: #DEF;
+    }
+    .icon {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+        font-family: sans-serif;
+        background: lightgray;
+        color: #333;
+        border-radius: 5px;
+        padding: 0;
+    }
+    .icon li {
+        padding: 8px 12px;
+        cursor: pointer;
+        list-style-type: none;
+    }
+
+    .icon li:hover {
+        background-color: #DEF;
+    }
+    .img {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+        font-family: sans-serif;
+        background: lightgray;
+        color: #333;
+        border-radius: 5px;
+        padding: 0;
+    }
+    .img li {
+        padding: 8px 12px;
+        cursor: pointer;
+        list-style-type: none;
+    }
+
+    .img li:hover {
+        background-color: #DEF;
+    }
+    .txt {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+        font-family: sans-serif;
+        background: lightgray;
+        color: #333;
+        border-radius: 5px;
+        padding: 0;
+    }
+    .txt li {
+        padding: 8px 12px;
+        cursor: pointer;
+        list-style-type: none;
+    }
+
+    .txt li:hover {
+        background-color: #DEF;
+    }
+    div.doc_box {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        background-color: white;
+        border: 10px solid white;
+        white-space: nowrap;
+        padding: 0;
+    }
+    div.txt_edit_box {
+	display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        background-color: white;
+        border: 10px solid white;
+        white-space: nowrap;
+        padding: 0;
+    }
+    div.video_box {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        background-color: white;
+        border: 10px solid white;
+        white-space: nowrap;
+        padding: 0;
+    }
+    div.audio_box {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        background-color: white;
+        border: 10px solid white;
+        white-space: nowrap;
+        padding: 0;
+    }
+    div.popup {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+	background-color: white;
+        border: 10px solid white;
+        white-space: nowrap;
+        padding: 0;
+    }
+    div.txt_popup {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        background-color: gray;
+        border: 10px solid white;
+	border-radius: 30px;
+        white-space: nowrap;
+        padding: 10px;
+    }
+    div.right_click{
+        position: absolute;
+        top: 0%;
+        min-height:600px;
+        right:0%;
+        opacity: 1;
+	background-color: #D0D0D0;
+        width: 100%;
+        height:100%;
+        margin: 0 0;
+    }
+    .center{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 13;
+	width: 1000px;
+	height:720px;
+    }
+    .center_adaptive{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 13;
+    }
+    div.file_browser{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+	background-color: silver;
+	opacity: 0.9;
+        border: 3px solid #D0D0D0 ;
+        border-radius: 30px;
+        padding:20px;
+        width: 500px;
+        height: 500px;
+	overflow: auto;
+    }
+    div.login{
+        position: relative;
+        height: auto;
+        width: auto;
+        display: inline-block;
+        padding: 50px;
+        overflow: hidden;
+        }
+    div.padding{
+        border: 3px solid #D0D0D0 ;
+        border-radius: 30px;
+        padding:10px;
+        }
+    div.upload{
+	position: relative
+	width: 500px;
+	height: auto;
+	background-color: lightgray;
+	opacity: 0.8;
+	margin: 0, auto, 0, auto;
+	padding: 5px;
+	border: 3px solid #D0D0D1;
+	border-radius: 30px;
+	}
+    div.back {
+        position: absolute;
+        top: 0%;
+        min-height:600px;
+        right:0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        width: 100%;
+        height:100%;
+        margin: 0 0;
+    }
+    div.default_back{
+        position: absolute;
+        top: 0%;
+        min-height:600px;
+        right:0%;
+	background-image: url("../image/view2.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        width: 100%;
+        height:100%;
+        margin: 0 0;
+    }
+    div.hidden {
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        opacity: 0.1;
+        margin: 0 auto;
+        }
+    div#footer {
+        color:black;
+        }
+    #slider {
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+    #slider ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        list-style: none;
+    }
+    #slider ul li {
+        position: relative;
+        float: left;
+        display: block;
+        line-height: 0px;
+        }
+    #image {
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+    }
+    #rename_input {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: auto;
+        white-space: nowrap;
+        font-family: sans-serif;
+        padding: 0;
+    }
+    div#footer {
+        position: fixed;
+        color:black;
+        bottom: 0%;
+        right: 0%;
+    }
+    a.control_prev, a.control_next {
+        position: absolute;
+        top: 30%;
+        z-index: 999;
+        display: block;
+        padding: 4% 3%;
+        width: auto;
+        height: auto;
+        background: #2a2a2a;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        opacity: 0.1;
+        cursor: pointer;
+    }
+
+    a.control_prev:hover, a.control_next:hover {
+        opacity: 1;
+        -webkit-transition: all 0.8s ease;
+    }
+
+    a.control_prev {
+        border-radius: 0 2px 2px 0;
+     }
+
+    a.control_next {
+        right: 0;
+        border-radius: 2px 0 0 2px;
+    }     
+    ::-webkit-scrollbar {
+    	width: 6px;
+    }	 	
+    ::-webkit-scrollbar-track {
+    	background-color: #eaeaea;
+    	border-left: 0px solid #ccc;
+	border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+    	background-color: #ccc;
+    }	
+    ::-webkit-scrollbar-thumb:hover {
+    	background-color: #aaa;
+    }   

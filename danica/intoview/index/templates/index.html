@@ -1,0 +1,90 @@
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/static/xfficient_icon.png" />
+<title>intoview</title>
+{% load staticfiles %}
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+<link rel="StyleSheet" type="text/css" href="{% static 'style.css'%}" />
+<style>
+    .center{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+    }
+.item:hover {
+	color: lightyellow !important;
+	font-size:1.05em !important;
+	text-decoration: none !important;
+}
+input::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 1em;
+    color: lightgreen;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 2s;
+}
+input:focus::-webkit-input-placeholder {
+    text-align: left;
+    
+}
+input:focus {
+    color: white;
+    opacity: 1;
+    font-size: 1em;
+}
+input:hover::-webkit-input-placeholder {
+    text-align: left;
+}
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+</style>	
+</head>
+<body style="min-width:1280px">
+{{dummy}}
+	<div class='nav' style="min-width:1280px;overflow:hidden">
+		<nav style="margin-left:20%;margin-right:10%">
+		<ul>
+			<li><a href="#" class="item" style="color:lightblue" id="resume">Resume</a></li>
+			<li><a href="#" class="item"  style="color:lightblue" id="about">About Me</a></li>
+			<li><a href="#" class="item"  style="color:lightblue" id="contact">Contact Me</a></li>
+			<li class="login" style="display:inline-block; min-width:400px;top:0;">
+				<form action="/ukk716" method="post" style="position:absolute; display:inline-block;margin:0;">
+				<input name="username" type=text placeholder="Username" style="height:auto;width:auto;border:none;background-color:black;opacity:0.6;font-size:1em">
+				<input name="password" type=password placeholder="PassWord" style="height:auto;width:auto;border:none;background-color:black;opacity:0.6;font-size:1em">
+				<button class="btn btn-success" type=submit style="margin:0;position:relative;top:-1px;height:1.5em;" ><p style="font-size:1em;position:relative;bottom:7px">GO</p></button>
+				</form>
+			</li>
+		</ul>
+		</nav>
+	</div>
+
+</body>
+<script>
+jQuery(document).ready(function ($) {
+	$(document).scroll(function(e) {
+		$('.nav').css({
+			'left': 0 - $(document).scrollLeft()
+		});
+	});
+});
+</script>

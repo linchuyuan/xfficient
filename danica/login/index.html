@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script>
+jQuery(document).ready(function ($) {
+$("#submit").click(function(){
+	var name = $("#username").val();
+	var pass = $("#password").val();
+	$.ajax({
+		url: "login.php",
+		method: "POST",
+		data: { username:name , password:pass },
+		success: function(result){
+			if (result === "true"){
+			document.getElementById("main").innerHTML = 
+			'<div style="margin: 5px;border: 5px solid lightgray" class="cover_upload">'+
+			'<form action="cover_upload.php" method="post" enctype="multipart/form-data" >'+
+			'Select cover file to upload: <input type="file" name="fileToUpload" id="fileToUpload">'+
+			'<input type="submit" value="Upload" name="submit"></form></div>'+
+			'<form action="post_upload.php" method="post" enctype="multipart/form-data">'+
+			'<p style="float: left">Title:'+
+        		'<input id="title" name="title" type=text style="width:500px"><br><br></p>'+
+			'<textarea id="content" name="content" style="white-space:pre;width: 500px; height: 500px"></textarea>'+
+			'Select picture to upload: <input type="file" name="post_image" id="post_image">'+
+        		'<input  type=submit  value="submit">'+
+        		'<br>'+
+        		'<br>'+
+			'</form>';
+				
+			}
+			else {alert("Wrong Login info");window.location.replace("http://www.xfficient.com");}
+			
+		}
+
+	});
+	$("textarea").keyup(function(e) {
+		alert ("called");
+    		var $this = $(this);
+    		var length = $this.val().length;
+    		if(length % 50 == 0) {
+        		$this.val($this.val() + "\n");   
+    		}
+	});
+});
+});
+</script>
+<style>
+div.center{
+	position: absolute;
+	margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+	height: 500px;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div class="center" id="main">
+<form action="main/session/session.php" method="post">
+        Username:<br>
+        <input id="username" type=text placeholder="Username" style="max-width:150px;width:auto"><br>
+        Password:<br>
+        <input id="password" type=password placeholder="Password" style="max-width:150px;width:auto"><br><br>
+        <input id="submit" type="button" value="login">
+        <br>
+        <br>
+</form>
+</div>
+</body>
+</html>
+

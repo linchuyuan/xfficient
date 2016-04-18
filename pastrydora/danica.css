@@ -1,0 +1,77 @@
+    div.center{
+	position: absolute;
+	margin: auto;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+   	left: 0;
+    	width: 100%;
+	text-align: center;
+    }
+    div.cover {
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 100%;
+    }
+    div.hidden {
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	opacity: 0.1;
+        margin: 0 auto;
+	}
+    #image {
+	width: 100%;
+	height: 100%;	
+	opacity: 0.9;
+    }
+    .item {
+	position:relative;
+	text-decoration:None;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+    }
+    .nav {
+	position: absolute;
+	z-index: 999;
+	background-color: black;
+	width: 100%;
+	height: 7%;
+	left: 0%;
+	opacity: 0.6;
+   }
+   nav ul {
+	text-align: justify;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+   }
+   nav ul:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+   }
+   nav ul li {
+	display: inline-block;
+	line-height: 100%;
+   }
+  .my_image {
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	overflow; hidden;
+  }
+  .inmail {
+        display: none;
+        border: 5px solid #D0D0D0 ;
+        border-radius: 30px;
+        padding: 20px;
+		height: 100%;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        margin: 0 0 0 0;
+  }		 
